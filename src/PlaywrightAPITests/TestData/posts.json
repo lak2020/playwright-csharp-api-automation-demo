@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Test Post One",
+    "body": "This is the body of test post one.",
+    "userId": 1
+  },
+  {
+    "title": "Test Post Two",
+    "body": "This is the body of test post two.",
+    "userId": 2
+  },
+  {
+    "title": "Test Post Three",
+    "body": "This is the body of test post three.",
+    "userId": 3
+  }
+]
