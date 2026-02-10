@@ -7,6 +7,12 @@ on:
     branches: [ master, main ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  checks: write
+  pages: write
+  id-token: write
+
 jobs:
   api-tests:
     runs-on: ubuntu-latest
@@ -35,6 +41,42 @@ jobs:
         env:
           DOTNET_ENVIRONMENT: CI
 
+      # --- Test Results Report (visible in Actions > Run > Checks tab) ---
+      - name: Publish test results report
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: API Test Results
+          path: TestResults/test-results.trx
+          reporter: dotnet-trx
+          fail-on-error: false
+
+      # --- Allure Report (published to GitHub Pages) ---
+      - name: Get Allure history
+        uses: actions/checkout@v4
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Generate Allure report
+        uses: simple-elf/allure-report-action@v1.9
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
+
+      - name: Deploy Allure report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
+
+      # --- Artifacts ---
       - name: Upload test results
         uses: actions/upload-artifact@v4
         if: always()
