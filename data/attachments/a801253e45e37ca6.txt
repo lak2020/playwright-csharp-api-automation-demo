@@ -1,0 +1,4 @@
+[07:33:02 INF] ▶ Starting test: GetPostById_NonExistentPost_Returns404
+[07:33:02 INF] GET /posts/999
+[07:33:02 INF] Response status: 404 (expected: 404)
+[07:33:02 INF] ✔ Test PASSED: GetPostById_NonExistentPost_Returns404

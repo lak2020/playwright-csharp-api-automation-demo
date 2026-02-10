@@ -1,0 +1,4 @@
+[07:33:03 INF] ▶ Starting test: GetTodosByUserId_ReturnsFilteredTodos
+[07:33:03 INF] GET /todos?userId=1
+[07:33:03 INF] Response status: 200 (expected: 200)
+[07:33:03 INF] ✔ Test PASSED: GetTodosByUserId_ReturnsFilteredTodos

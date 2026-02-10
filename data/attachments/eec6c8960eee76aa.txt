@@ -1,4 +1,0 @@
-[07:19:03 INF] ▶ Starting test: CreatePost_DataDriven_Returns201("Third Post","Body of third post",3)
-[07:19:03 INF] POST /posts — Title: Third Post, UserId: 3
-[07:19:03 INF] Response status: 201 (expected: 201)
-[07:19:03 INF] ✔ Test PASSED: CreatePost_DataDriven_Returns201("Third Post","Body of third post",3)

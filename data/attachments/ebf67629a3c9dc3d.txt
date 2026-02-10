@@ -1,0 +1,4 @@
+[07:33:03 INF] ▶ Starting test: GetTodoById_NonExistent_Returns404
+[07:33:03 INF] GET /todos/999
+[07:33:03 INF] Response status: 404 (expected: 404)
+[07:33:03 INF] ✔ Test PASSED: GetTodoById_NonExistent_Returns404
