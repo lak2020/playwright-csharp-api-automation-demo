@@ -4,6 +4,18 @@ A modern API test automation framework built with **Playwright for .NET**, **NUn
 
 Demonstrates best practices for API testing including service object pattern, fluent assertions, structured logging, Allure reporting, and CI/CD integration.
 
+---
+
+### 🔗 Quick Links
+
+| Resource | Link |
+|----------|------|
+| 📊 **Test Report** | [Allure Report on GitHub Pages](https://lak2020.github.io/playwright-csharp-api-automation-demo) |
+| ⚙️ **CI/CD Pipeline** | [GitHub Actions Runs](https://github.com/lak2020/playwright-csharp-api-automation-demo/actions) |
+| 💻 **Source Code** | [GitHub Repository](https://github.com/lak2020/playwright-csharp-api-automation-demo) |
+
+---
+
 ## 🏗️ Project Structure
 
 ```
