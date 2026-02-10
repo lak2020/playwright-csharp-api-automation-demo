@@ -1,0 +1,52 @@
+name: Playwright API Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore PlaywrightAPITests.sln
+
+      - name: Build solution
+        run: dotnet build PlaywrightAPITests.sln --configuration Release --no-restore
+
+      - name: Install Playwright browsers
+        run: pwsh src/PlaywrightAPITests/bin/Release/net8.0/playwright.ps1 install --with-deps
+
+      - name: Run API tests
+        run: dotnet test PlaywrightAPITests.sln --configuration Release --no-build --logger "trx;LogFileName=test-results.trx" --results-directory TestResults
+        env:
+          DOTNET_ENVIRONMENT: CI
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: TestResults/
+          retention-days: 30
+
+      - name: Upload Allure results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results
+          path: allure-results/
+          retention-days: 30
