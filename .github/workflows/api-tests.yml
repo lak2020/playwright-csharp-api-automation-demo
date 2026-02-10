@@ -40,6 +40,21 @@ jobs:
         run: dotnet test PlaywrightAPITests.sln --configuration Release --no-build --logger "trx;LogFileName=test-results.trx" --results-directory TestResults
         env:
           DOTNET_ENVIRONMENT: CI
+          ALLURE_OUTPUT_DIR: ${{ github.workspace }}/allure-results
+
+      - name: Collect Allure results
+        if: always()
+        run: |
+          echo "Searching for allure-results..."
+          find . -type d -name "allure-results" -ls
+          # Copy allure results from wherever they were generated to workspace root
+          find . -path ./allure-results -prune -o -type d -name "allure-results" -print | while read dir; do
+            echo "Found results in: $dir"
+            mkdir -p allure-results
+            cp -r "$dir"/* allure-results/ 2>/dev/null || true
+          done
+          echo "Final allure-results contents:"
+          ls -la allure-results/ 2>/dev/null || echo "No results found"
 
       # --- Test Results Report (visible in Actions > Run > Checks tab) ---
       - name: Publish test results report
