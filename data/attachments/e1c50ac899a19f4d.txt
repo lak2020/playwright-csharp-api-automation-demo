@@ -1,4 +1,0 @@
-[04:40:40 INF] ▶ Starting test: GetTodoById_ReturnsCorrectTodo
-[04:40:40 INF] GET /todos/1
-[04:40:40 INF] Response status: 200 (expected: 200)
-[04:40:40 INF] ✔ Test PASSED: GetTodoById_ReturnsCorrectTodo

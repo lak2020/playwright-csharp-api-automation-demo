@@ -1,4 +1,0 @@
-[04:40:40 INF] ▶ Starting test: GetUserById_NonExistentUser_Returns404
-[04:40:40 INF] GET /users/999
-[04:40:40 INF] Response status: 404 (expected: 404)
-[04:40:40 INF] ✔ Test PASSED: GetUserById_NonExistentUser_Returns404

@@ -1,4 +1,0 @@
-[04:40:39 INF] ▶ Starting test: GetPosts_ReturnsList_With100Posts
-[04:40:39 INF] GET /posts
-[04:40:39 INF] Response status: 200 (expected: 200)
-[04:40:39 INF] ✔ Test PASSED: GetPosts_ReturnsList_With100Posts

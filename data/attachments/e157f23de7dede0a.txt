@@ -1,0 +1,4 @@
+[07:19:06 INF] ▶ Starting test: GetUsers_ReturnsList_With10Users
+[07:19:06 INF] GET /users
+[07:19:06 INF] Response status: 200 (expected: 200)
+[07:19:06 INF] ✔ Test PASSED: GetUsers_ReturnsList_With10Users

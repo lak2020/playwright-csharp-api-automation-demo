@@ -1,57 +1,57 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Verify POST /posts works with various data combinations
-","37","CreatePost_DataDriven_Returns201(""Second Post"",""Body of second post"",2)","","Tue Feb 10 04:40:38 UTC 2026","passed","Tue Feb 10 04:40:38 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_DataDriven_Returns201"
-"Verify GET /todos/999 returns 404 for non-existent todo
-","56","GetTodoById_NonExistent_Returns404","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodoById_NonExistent_Returns404"
-"Verify GET /users/1 returns user with complete data structure
-","17","GetUserById_ReturnsCompleteUser","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_ReturnsCompleteUser"
-"Verify POST /posts works with various data combinations
-","208","CreatePost_DataDriven_Returns201(""First Post"",""Body of first post"",1)","","Tue Feb 10 04:40:38 UTC 2026","passed","Tue Feb 10 04:40:38 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_DataDriven_Returns201"
-"Verify GET /todos?userId=1 returns only todos for user 1
-","18","GetTodosByUserId_ReturnsFilteredTodos","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodosByUserId_ReturnsFilteredTodos"
-"Verify GET /todos/1 returns a single todo
-","15","GetTodoById_ReturnsCorrectTodo","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodoById_ReturnsCorrectTodo"
-"Verify GET /users returns list of 10 users
-","15","GetUsers_ReturnsList_With10Users","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Users","User Management","GetUserTests","GetUsers_ReturnsList_With10Users"
-"Verify GET /users/{id} returns correct user for various IDs
-","14","GetUserById_VariousIds_ReturnsMatchingUser(1)","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_VariousIds_ReturnsMatchingUser"
-"Verify GET /posts?userId=1 returns only posts for user 1
-","13","GetPostsByUserId_ReturnsFilteredPosts","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Get Posts","Post Management","GetPostTests","GetPostsByUserId_ReturnsFilteredPosts"
-"Verify GET /users/{id} returns correct user for various IDs
-","16","GetUserById_VariousIds_ReturnsMatchingUser(10)","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_VariousIds_ReturnsMatchingUser"
-"Verify PUT /posts/{id} fully updates a post and returns 200
-","86","UpdatePost_WithPut_Returns200","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Update Posts","Post Management","UpdatePostTests","UpdatePost_WithPut_Returns200"
-"Verify GET /posts/1/comments returns comments for post 1
-","20","GetPostComments_ReturnsCommentsList","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Get Posts","Post Management","GetPostTests","GetPostComments_ReturnsCommentsList"
-"Verify PUT /posts/{id} with random data updates correctly
-","91","UpdatePost_WithRandomData_Returns200","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Update Posts","Post Management","UpdatePostTests","UpdatePost_WithRandomData_Returns200"
-"Verify POST /posts works with various data combinations
-","34","CreatePost_DataDriven_Returns201(""Third Post"",""Body of third post"",3)","","Tue Feb 10 04:40:38 UTC 2026","passed","Tue Feb 10 04:40:38 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_DataDriven_Returns201"
-"Verify GET /posts returns list of 100 posts
-","16","GetPosts_ReturnsList_With100Posts","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Get Posts","Post Management","GetPostTests","GetPosts_ReturnsList_With100Posts"
-"Verify GET /posts/999 returns 404 for non-existent post
-","65","GetPostById_NonExistentPost_Returns404","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Get Posts","Post Management","GetPostTests","GetPostById_NonExistentPost_Returns404"
-"Verify DELETE /posts/{id} for various IDs returns 200
-","33","DeletePost_VariousIds_Returns200(50)","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Delete Posts","Post Management","DeletePostTests","DeletePost_VariousIds_Returns200"
-"Verify POST /posts creates a new post and returns 201
-","33","CreatePost_WithValidData_Returns201","","Tue Feb 10 04:40:38 UTC 2026","passed","Tue Feb 10 04:40:38 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_WithValidData_Returns201"
-"Verify DELETE /posts/{id} for various IDs returns 200
-","31","DeletePost_VariousIds_Returns200(100)","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Delete Posts","Post Management","DeletePostTests","DeletePost_VariousIds_Returns200"
-"Verify DELETE /posts/{id} for various IDs returns 200
-","33","DeletePost_VariousIds_Returns200(1)","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Delete Posts","Post Management","DeletePostTests","DeletePost_VariousIds_Returns200"
-"Verify PATCH /posts/{id} partially updates a post
-","83","UpdatePost_WithPatch_Returns200","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Update Posts","Post Management","UpdatePostTests","UpdatePost_WithPatch_Returns200"
-"Verify POST /posts with Bogus random data creates post correctly
-","83","CreatePost_WithRandomData_Returns201","","Tue Feb 10 04:40:38 UTC 2026","passed","Tue Feb 10 04:40:38 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_WithRandomData_Returns201"
-"Verify GET /todos returns list of 200 todos
-","14","GetTodos_ReturnsList_With200Todos","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodos_ReturnsList_With200Todos"
-"Verify GET /posts/1 returns a single post with correct data
-","11","GetPostById_ReturnsCorrectPost","","Tue Feb 10 04:40:39 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Get Posts","Post Management","GetPostTests","GetPostById_ReturnsCorrectPost"
 "Verify todos contain both completed and incomplete items
-","17","GetTodos_ContainsBothCompletedAndIncomplete","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodos_ContainsBothCompletedAndIncomplete"
-"Verify GET /users/999 returns 404 for non-existent user
-","63","GetUserById_NonExistentUser_Returns404","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_NonExistentUser_Returns404"
+","17","GetTodos_ContainsBothCompletedAndIncomplete","","Tue Feb 10 07:19:05 UTC 2026","passed","Tue Feb 10 07:19:05 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodos_ContainsBothCompletedAndIncomplete"
+"Verify GET /todos/999 returns 404 for non-existent todo
+","58","GetTodoById_NonExistent_Returns404","","Tue Feb 10 07:19:05 UTC 2026","passed","Tue Feb 10 07:19:05 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodoById_NonExistent_Returns404"
 "Verify GET /users/{id} returns correct user for various IDs
-","14","GetUserById_VariousIds_ReturnsMatchingUser(5)","","Tue Feb 10 04:40:40 UTC 2026","passed","Tue Feb 10 04:40:40 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_VariousIds_ReturnsMatchingUser"
+","13","GetUserById_VariousIds_ReturnsMatchingUser(1)","","Tue Feb 10 07:19:06 UTC 2026","passed","Tue Feb 10 07:19:06 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_VariousIds_ReturnsMatchingUser"
+"Verify POST /posts works with various data combinations
+","36","CreatePost_DataDriven_Returns201(""Second Post"",""Body of second post"",2)","","Tue Feb 10 07:19:03 UTC 2026","passed","Tue Feb 10 07:19:03 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_DataDriven_Returns201"
+"Verify GET /users/{id} returns correct user for various IDs
+","77","GetUserById_VariousIds_ReturnsMatchingUser(10)","","Tue Feb 10 07:19:06 UTC 2026","passed","Tue Feb 10 07:19:06 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_VariousIds_ReturnsMatchingUser"
+"Verify POST /posts works with various data combinations
+","269","CreatePost_DataDriven_Returns201(""First Post"",""Body of first post"",1)","","Tue Feb 10 07:19:03 UTC 2026","passed","Tue Feb 10 07:19:03 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_DataDriven_Returns201"
+"Verify DELETE /posts/{id} for various IDs returns 200
+","32","DeletePost_VariousIds_Returns200(50)","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Delete Posts","Post Management","DeletePostTests","DeletePost_VariousIds_Returns200"
+"Verify GET /users returns list of 10 users
+","17","GetUsers_ReturnsList_With10Users","","Tue Feb 10 07:19:06 UTC 2026","passed","Tue Feb 10 07:19:06 UTC 2026","Get Users","User Management","GetUserTests","GetUsers_ReturnsList_With10Users"
+"Verify GET /users/999 returns 404 for non-existent user
+","67","GetUserById_NonExistentUser_Returns404","","Tue Feb 10 07:19:06 UTC 2026","passed","Tue Feb 10 07:19:06 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_NonExistentUser_Returns404"
+"Verify GET /posts/1/comments returns comments for post 1
+","25","GetPostComments_ReturnsCommentsList","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Get Posts","Post Management","GetPostTests","GetPostComments_ReturnsCommentsList"
+"Verify DELETE /posts/{id} for various IDs returns 200
+","32","DeletePost_VariousIds_Returns200(100)","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Delete Posts","Post Management","DeletePostTests","DeletePost_VariousIds_Returns200"
+"Verify GET /posts/999 returns 404 for non-existent post
+","68","GetPostById_NonExistentPost_Returns404","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Get Posts","Post Management","GetPostTests","GetPostById_NonExistentPost_Returns404"
+"Verify GET /posts/1 returns a single post with correct data
+","16","GetPostById_ReturnsCorrectPost","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Get Posts","Post Management","GetPostTests","GetPostById_ReturnsCorrectPost"
+"Verify PUT /posts/{id} with random data updates correctly
+","76","UpdatePost_WithRandomData_Returns200","","Tue Feb 10 07:19:05 UTC 2026","passed","Tue Feb 10 07:19:05 UTC 2026","Update Posts","Post Management","UpdatePostTests","UpdatePost_WithRandomData_Returns200"
+"Verify GET /todos?userId=1 returns only todos for user 1
+","13","GetTodosByUserId_ReturnsFilteredTodos","","Tue Feb 10 07:19:05 UTC 2026","passed","Tue Feb 10 07:19:05 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodosByUserId_ReturnsFilteredTodos"
+"Verify GET /posts?userId=1 returns only posts for user 1
+","15","GetPostsByUserId_ReturnsFilteredPosts","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Get Posts","Post Management","GetPostTests","GetPostsByUserId_ReturnsFilteredPosts"
+"Verify GET /todos returns list of 200 todos
+","14","GetTodos_ReturnsList_With200Todos","","Tue Feb 10 07:19:05 UTC 2026","passed","Tue Feb 10 07:19:05 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodos_ReturnsList_With200Todos"
+"Verify GET /todos/1 returns a single todo
+","15","GetTodoById_ReturnsCorrectTodo","","Tue Feb 10 07:19:05 UTC 2026","passed","Tue Feb 10 07:19:05 UTC 2026","Get Todos","Todo Management","GetTodoTests","GetTodoById_ReturnsCorrectTodo"
+"Verify GET /users/1 returns user with complete data structure
+","18","GetUserById_ReturnsCompleteUser","","Tue Feb 10 07:19:06 UTC 2026","passed","Tue Feb 10 07:19:06 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_ReturnsCompleteUser"
 "Verify DELETE /posts/{id} deletes a post and returns 200
-","93","DeletePost_ExistingPost_Returns200","","Tue Feb 10 04:40:38 UTC 2026","passed","Tue Feb 10 04:40:39 UTC 2026","Delete Posts","Post Management","DeletePostTests","DeletePost_ExistingPost_Returns200"
+","88","DeletePost_ExistingPost_Returns200","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Delete Posts","Post Management","DeletePostTests","DeletePost_ExistingPost_Returns200"
+"Verify GET /users/{id} returns correct user for various IDs
+","14","GetUserById_VariousIds_ReturnsMatchingUser(5)","","Tue Feb 10 07:19:06 UTC 2026","passed","Tue Feb 10 07:19:06 UTC 2026","Get Users","User Management","GetUserTests","GetUserById_VariousIds_ReturnsMatchingUser"
+"Verify POST /posts with Bogus random data creates post correctly
+","81","CreatePost_WithRandomData_Returns201","","Tue Feb 10 07:19:03 UTC 2026","passed","Tue Feb 10 07:19:03 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_WithRandomData_Returns201"
+"Verify PUT /posts/{id} fully updates a post and returns 200
+","79","UpdatePost_WithPut_Returns200","","Tue Feb 10 07:19:05 UTC 2026","passed","Tue Feb 10 07:19:05 UTC 2026","Update Posts","Post Management","UpdatePostTests","UpdatePost_WithPut_Returns200"
+"Verify GET /posts returns list of 100 posts
+","20","GetPosts_ReturnsList_With100Posts","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Get Posts","Post Management","GetPostTests","GetPosts_ReturnsList_With100Posts"
+"Verify DELETE /posts/{id} for various IDs returns 200
+","33","DeletePost_VariousIds_Returns200(1)","","Tue Feb 10 07:19:04 UTC 2026","passed","Tue Feb 10 07:19:04 UTC 2026","Delete Posts","Post Management","DeletePostTests","DeletePost_VariousIds_Returns200"
+"Verify POST /posts works with various data combinations
+","34","CreatePost_DataDriven_Returns201(""Third Post"",""Body of third post"",3)","","Tue Feb 10 07:19:03 UTC 2026","passed","Tue Feb 10 07:19:03 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_DataDriven_Returns201"
+"Verify POST /posts creates a new post and returns 201
+","34","CreatePost_WithValidData_Returns201","","Tue Feb 10 07:19:03 UTC 2026","passed","Tue Feb 10 07:19:03 UTC 2026","Create Posts","Post Management","CreatePostTests","CreatePost_WithValidData_Returns201"
+"Verify PATCH /posts/{id} partially updates a post
+","134","UpdatePost_WithPatch_Returns200","","Tue Feb 10 07:19:05 UTC 2026","passed","Tue Feb 10 07:19:05 UTC 2026","Update Posts","Post Management","UpdatePostTests","UpdatePost_WithPatch_Returns200"

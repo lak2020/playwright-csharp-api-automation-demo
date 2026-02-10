@@ -1,4 +1,0 @@
-[04:40:38 INF] ▶ Starting test: CreatePost_WithValidData_Returns201
-[04:40:38 INF] POST /posts — Title: Test Post Title, UserId: 1
-[04:40:38 INF] Response status: 201 (expected: 201)
-[04:40:38 INF] ✔ Test PASSED: CreatePost_WithValidData_Returns201

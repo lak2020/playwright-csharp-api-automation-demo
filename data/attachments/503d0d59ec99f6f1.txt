@@ -1,0 +1,4 @@
+[07:19:05 INF] ▶ Starting test: GetTodos_ReturnsList_With200Todos
+[07:19:05 INF] GET /todos
+[07:19:05 INF] Response status: 200 (expected: 200)
+[07:19:05 INF] ✔ Test PASSED: GetTodos_ReturnsList_With200Todos

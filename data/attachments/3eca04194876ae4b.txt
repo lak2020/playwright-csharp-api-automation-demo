@@ -1,4 +1,0 @@
-[04:40:39 INF] ▶ Starting test: UpdatePost_WithPatch_Returns200
-[04:40:39 INF] PATCH /posts/1
-[04:40:39 INF] Response status: 200 (expected: 200)
-[04:40:39 INF] ✔ Test PASSED: UpdatePost_WithPatch_Returns200

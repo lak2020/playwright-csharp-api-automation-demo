@@ -1,0 +1,4 @@
+[07:19:04 INF] ▶ Starting test: DeletePost_VariousIds_Returns200(100)
+[07:19:04 INF] DELETE /posts/100
+[07:19:04 INF] Response status: 200 (expected: 200)
+[07:19:04 INF] ✔ Test PASSED: DeletePost_VariousIds_Returns200(100)

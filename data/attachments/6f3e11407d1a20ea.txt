@@ -1,4 +1,0 @@
-[04:40:40 INF] ▶ Starting test: GetUserById_VariousIds_ReturnsMatchingUser(5)
-[04:40:40 INF] GET /users/5
-[04:40:40 INF] Response status: 200 (expected: 200)
-[04:40:40 INF] ✔ Test PASSED: GetUserById_VariousIds_ReturnsMatchingUser(5)

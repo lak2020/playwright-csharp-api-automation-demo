@@ -1,0 +1,4 @@
+[07:19:05 INF] ▶ Starting test: UpdatePost_WithPut_Returns200
+[07:19:05 INF] PUT /posts/1 — Title: Updated Title
+[07:19:05 INF] Response status: 200 (expected: 200)
+[07:19:05 INF] ✔ Test PASSED: UpdatePost_WithPut_Returns200
