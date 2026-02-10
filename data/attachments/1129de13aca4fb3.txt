@@ -1,0 +1,4 @@
+[04:40:39 INF] ▶ Starting test: GetPostsByUserId_ReturnsFilteredPosts
+[04:40:39 INF] GET /posts?userId=1
+[04:40:39 INF] Response status: 200 (expected: 200)
+[04:40:39 INF] ✔ Test PASSED: GetPostsByUserId_ReturnsFilteredPosts

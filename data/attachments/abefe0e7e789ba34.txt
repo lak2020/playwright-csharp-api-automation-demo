@@ -1,0 +1,4 @@
+[04:40:39 INF] ▶ Starting test: GetPostComments_ReturnsCommentsList
+[04:40:39 INF] GET /posts/1/comments
+[04:40:39 INF] Response status: 200 (expected: 200)
+[04:40:39 INF] ✔ Test PASSED: GetPostComments_ReturnsCommentsList

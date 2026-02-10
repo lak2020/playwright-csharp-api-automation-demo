@@ -1,1 +1,1 @@
-{"total":0,"items":[]}
+{"total":3,"items":[{"uid":"f965aa7ca83d8ab1b0fee30f455c12c4","name":"Post Management","statistic":{"failed":0,"broken":0,"skipped":0,"passed":17,"unknown":0,"total":17}},{"uid":"7aeef808bca11b369c658f6ea8506892","name":"User Management","statistic":{"failed":0,"broken":0,"skipped":0,"passed":6,"unknown":0,"total":6}},{"uid":"76e7780ec4b55fd733b85a6580ecc171","name":"Todo Management","statistic":{"failed":0,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":5}}]}

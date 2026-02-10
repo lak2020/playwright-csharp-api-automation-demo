@@ -1,0 +1,4 @@
+[04:40:38 INF] ▶ Starting test: CreatePost_WithRandomData_Returns201
+[04:40:38 INF] POST /posts — Title: Ut quas perspiciatis omnis non porro aliquid., UserId: 7
+[04:40:38 INF] Response status: 201 (expected: 201)
+[04:40:38 INF] ✔ Test PASSED: CreatePost_WithRandomData_Returns201
