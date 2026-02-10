@@ -1,0 +1,44 @@
+## Build results
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## NuGet
+*.nupkg
+**/packages/*
+*.nuget.props
+*.nuget.targets
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## JetBrains Rider
+.idea/
+*.sln.iml
+
+## Test results
+TestResults/
+allure-results/
+allure-report/
+logs/
+
+## OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+## Environment
+.env
+.env.local
+appsettings.Development.json
+appsettings.Local.json

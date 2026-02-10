@@ -1,0 +1,14 @@
+global using NUnit.Framework;
+global using FluentAssertions;
+global using Microsoft.Playwright;
+global using System.Text.Json;
+global using System.Text.Json.Serialization;
+global using Allure.NUnit;
+global using Allure.NUnit.Attributes;
+global using Allure.Net.Commons;
+global using PlaywrightAPITests.Models.Request;
+global using PlaywrightAPITests.Models.Response;
+global using PlaywrightAPITests.Services;
+global using PlaywrightAPITests.Utilities;
+global using PlaywrightAPITests.Config;
+global using PlaywrightAPITests.Base;
