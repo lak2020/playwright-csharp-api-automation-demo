@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   checks: write
   pages: write
   id-token: write
@@ -60,13 +60,38 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Generate Allure report
-        uses: simple-elf/allure-report-action@v1.9
+      - name: Setup Java
+        uses: actions/setup-java@v4
         if: always()
         with:
-          allure_results: allure-results
-          allure_history: allure-history
-          keep_reports: 20
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Install Allure CLI
+        if: always()
+        run: |
+          curl -sLo allure.tgz https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz
+          tar -xzf allure.tgz
+          echo "$PWD/allure-2.30.0/bin" >> $GITHUB_PATH
+
+      - name: Copy Allure history
+        if: always()
+        run: |
+          if [ -d gh-pages/last-history ]; then
+            mkdir -p allure-results/history
+            cp -r gh-pages/last-history/* allure-results/history/
+          fi
+
+      - name: Generate Allure report
+        if: always()
+        run: allure generate allure-results -o allure-report --clean
+
+      - name: Prepare GitHub Pages content
+        if: always()
+        run: |
+          mkdir -p allure-history
+          cp -r allure-report/* allure-history/
+          cp -r allure-report/history allure-history/last-history || true
 
       - name: Deploy Allure report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
